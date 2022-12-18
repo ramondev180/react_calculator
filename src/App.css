@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: Arial, Helvetica, sans-serif ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+  --borderRadius:20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+  width: 400px;
+  margin: 30px auto;
+  border: 1px solid black;
+  border-radius: var(--borderRadius);
+  box-shadow: 1px 1px 1px 1px black;
+  background: rgb(0, 31, 78);
+  padding:20px;
 }
-
-.App-link {
-  color: #61dafb;
+.screen{
+  width: 100%;
+  font-size: 20px;  
+  height: 60px;
+  padding: 0 20px;
+  border-radius: 30px;
+  background: rgb(124, 124, 124);
+  color: black;
+  border-radius: calc(var(--borderRadius) - 5px);
+  font-weight: bold;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.screen p{
+  line-height: 60px;
+}
+.action{
+  padding:10px 0;
+}
+.row{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.btn{
+  padding: 15px 25px; 
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
